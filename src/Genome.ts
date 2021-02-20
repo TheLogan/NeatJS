@@ -1,4 +1,5 @@
 import Node from "./Node";
+import Connection from './Connection';
 
 //The Genome Class
 //Well.. this is the main class
@@ -12,7 +13,7 @@ export default class Genome {
   nodes: any[];
   connections: any[];
 
-  constructor(inp, out, id, offSpring = false) {
+  constructor(inp: number, out: number, id: number|string, offSpring: boolean = false) {
     this.inputs = inp; //Number of inputs
     this.outputs = out; //Number of outputs
     this.id = id; //Genome id -> used for the drawing
@@ -338,7 +339,7 @@ export default class Genome {
     var element = document.getElementById(this.id);
     if (element) element.parentNode.removeChild(element);
 
-    var svg = d3
+    var svg = d3 // TODO: rewrite this to be a console program
       .select("body")
       .append("svg")
       .attr("width", width)

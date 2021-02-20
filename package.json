@@ -1,9 +1,10 @@
 {
-  "name": "NeatJS",
+  "name": "neat-ts",
   "version": "1.0.0",
   "description": "A JavaScript implementation of the Neat Algorithm. <br/>\r Genome Drawing done using D3.js",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node ./src/main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +19,10 @@
   },
   "homepage": "https://github.com/TheLogan/NeatJS#readme",
   "dependencies": {
-    "p5": "^1.2.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/p5": "^0.9.1"
   }
 }

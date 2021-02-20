@@ -1,3 +1,4 @@
+import Player from "./Player";
 let genomeInputsN = 2;
 let genomeOutputN = 1;
 let showBest = true;

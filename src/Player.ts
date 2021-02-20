@@ -3,7 +3,7 @@ import Genome from "./Genome";
 //The Player Class
 //The interface between our
 //NeuralNetwork and the game
-class Player {
+export default class Player {
   brain: any;
   fitness: any;
   score: number;
@@ -14,7 +14,7 @@ class Player {
   correctVal: any;
   val: number;
 
-  constructor(id) {
+  constructor(id?: number | string) {
     this.brain = new Genome(genomeInputsN, genomeOutputN, id);
     this.fitness;
 

@@ -1,14 +1,17 @@
+import Node from "./Node";
+import { randomGaussian } from "./utils";
+
 //The Connection Class
 //Is where all the weights are stored
 //Mostly used for a cleaner and more readable code.
 export default class Connection {
-	fromNode;
-	toNode;
-	weight;
+	fromNode: Node;
+	toNode: Node;
+	weight: number;
 	enabled: boolean;
 	
 
-	constructor(from, to, weight){
+	constructor(from: Node, to: Node, weight: number){
 		this.fromNode = from; //type: Node
 		this.toNode = to; //type: Node
 		this.weight = weight; //type: Number
@@ -20,6 +23,7 @@ export default class Connection {
 		if (rand < 0.05) //5% chance of being assigned a new random value
 			this.weight = Math.random() * 2 - 1;
 		else //95% chance of being uniformly perturbed
+		
 			this.weight += randomGaussian() / 50;
 	}
 
