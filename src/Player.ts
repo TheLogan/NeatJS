@@ -13,7 +13,7 @@ export default class Player {
   decisions: any[];
   vision: any[];
   correctVal: any;
-  val: number;
+  val: number = 0;
 
   constructor(id?: number | string) {
     this.brain = new Genome(genomeInputsN, genomeOutputN, id);

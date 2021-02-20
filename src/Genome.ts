@@ -13,7 +13,7 @@ export default class Genome {
   nodes: any[];
   connections: any[];
 
-  constructor(inp: number, out: number, id: number|string, offSpring: boolean = false) {
+  constructor(inp: number, out: number, id?: number|string, offSpring: boolean = false) {
     this.inputs = inp; //Number of inputs
     this.outputs = out; //Number of outputs
     this.id = id; //Genome id -> used for the drawing
