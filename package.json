@@ -1,0 +1,24 @@
+{
+  "name": "NeatJS",
+  "version": "1.0.0",
+  "description": "A JavaScript implementation of the Neat Algorithm. <br/>\r Genome Drawing done using D3.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLogan/NeatJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheLogan/NeatJS/issues"
+  },
+  "homepage": "https://github.com/TheLogan/NeatJS#readme",
+  "dependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
