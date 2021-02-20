@@ -33,7 +33,7 @@ export default class Player {
     return clone;
   }
 
-  crossover(parent) {
+  crossover(parent: Player) {
     //Produce a child
     let child = new Player();
     if (parent.fitness < this.fitness)

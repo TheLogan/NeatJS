@@ -1,6 +1,6 @@
 import Player from "./Player";
-let genomeInputsN = 2;
-let genomeOutputN = 1;
+export const genomeInputsN = 2;
+export const genomeOutputN = 1;
 let showBest = true;
 
 //The Population Class
@@ -12,7 +12,8 @@ export default class Population {
   bestFitness: number;
   generation: number;
   matingPool: any[];
-  constructor(size) {
+  
+  constructor(size: number) {
     this.population = [];
     this.bestPlayer;
     this.bestFitness = 0;
@@ -81,7 +82,6 @@ export default class Population {
     });
 
     console.log("Generation " + this.generation);
-    //console.log(this);
 
     this.bestPlayer.lifespan = 0;
     this.bestPlayer.dead = false;
