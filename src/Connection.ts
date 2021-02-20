@@ -1,7 +1,13 @@
 //The Connection Class
 //Is where all the weights are stored
 //Mostly used for a cleaner and more readable code.
-class Connection {
+export default class Connection {
+	fromNode;
+	toNode;
+	weight;
+	enabled: boolean;
+	
+
 	constructor(from, to, weight){
 		this.fromNode = from; //type: Node
 		this.toNode = to; //type: Node
