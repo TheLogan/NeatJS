@@ -1,4 +1,5 @@
 import Genome from "./Genome";
+import { genomeInputsN, genomeOutputN } from "./Population";
 
 //The Player Class
 //The interface between our
